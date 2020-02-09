@@ -111,8 +111,10 @@ function capitalize(){
   for(var i = 0; i<data.length; i++){
     if(data.charCodeAt(i)>= 65 && data.charCodeAt(i)<=90){
       textarea.value = textarea.value.toLowerCase(i);
-    } else {
+    } else if(data.charCodeAt(i)>= 97 && data.charCodeAt(i)<=122){
       textarea.value = textarea.value.toUpperCase(i);
+    } else {
+      
     }
   }
 }
